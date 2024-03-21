@@ -379,6 +379,11 @@ section {
   margin-bottom: 0.75rem;
 }
 
+.section-team__subline {
+  width: 100%;
+  margin: 2rem 0 3.5rem;
+}
+
 .section-headline {
   background-image: url("../img/1600land_u300.png");
   background-position: center;
