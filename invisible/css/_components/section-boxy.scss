@@ -74,18 +74,33 @@
 
 .section-three-boxy__text-wrapper {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
+  gap: $small;
 }
 
 .section-three-boxy__box {
   //width: calc((100vw - (2 * $huge) - (2 * $small)) / 3);
   background-color: $lightblue;
   padding: $small;
+
+  max-width: none;
+  //max-width: calc(33% - ());
   flex-grow: 1;
-  margin: 0 $small $small 0;
+  //margin: 0;
 
   &:last-child {
-    margin: 0 0 $small 0;
+    //margin: 0;
+  }
+}
+
+@media only screen and (min-width: $desktop){
+  .section-three-boxy__box {
+    max-width:20rem;
+    //margin: 0 $small $small 0;
+
+    &:last-child {
+      //margin: 0 0 $small 0;
+    }
   }
 }
 
