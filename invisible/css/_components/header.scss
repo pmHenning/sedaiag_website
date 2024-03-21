@@ -2,10 +2,10 @@ header {
 }
 
 .header__wrapper {
-  padding: 22px $huge 14px $huge;
+  padding: 22px 0 14px 0;
+  margin: 0 $small;
   height: 1.5625rem;
   display: flex;
-  align-items: center;
 
   & > div:nth-child(2) {
     margin-right: auto;
@@ -21,12 +21,12 @@ header {
 }
 
 .header__navi a {
+  visibility: hidden;
   padding: 0.25rem 0 0.25rem 1.75rem;
 }
 
 
 .header__lang {
-visibility: hidden;
 
   .header__lang-en {
     padding: 0.15rem 0.25rem;
@@ -37,4 +37,17 @@ visibility: hidden;
 
 .header--active {
   font-weight: 700 !important;
+}
+
+@media only screen and (min-width: $tablet){
+  .header__wrapper {
+    margin: 0 $huge;
+  }
+}
+
+@media only screen and (min-width: $desktop){
+  .header__wrapper {
+    max-width: calc(87.5rem - 2 * $huge);
+    margin: 0 auto;
+  }
 }

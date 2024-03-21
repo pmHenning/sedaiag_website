@@ -12,9 +12,9 @@ html {
   padding: 0 $normal;
 }
 
-.wrapper > * {
-  margin: 0 auto;
-}
+//.wrapper > * {
+//  margin: 0 auto;
+//}
 
 section {
   display: flex;
@@ -34,8 +34,9 @@ section {
 }
 
 @media only screen and (min-width: $desktop){
-  .wrapper > * {
-    //justify-content: center;
+  .wrapper {
+    max-width: calc(87.5rem - 2 * $huge);
+    margin: 0 auto;
   }
 }
 

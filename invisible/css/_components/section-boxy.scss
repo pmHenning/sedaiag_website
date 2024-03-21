@@ -1,60 +1,54 @@
-.section-boxy {
+
+/** ONE BOX - split into to small ;-)
+*/
+
+.section-one-box {
   flex-wrap: wrap-reverse;
 
   & > div {
     padding: $normal;
-    margin-right: 0;
-
-    &:last-child {
-      margin-right: 0;
-    }
   }
 }
 
-.section-boxy__left-box {
+.section-one-box__left-box {
   background-color: $lightblue;
   min-width: 23rem;
   max-height: 25rem;
   flex-grow: 4;
-  //flex-basis: 29.375rem;
   padding: $normal;
 }
 
-.section-boxy__text {
+.section-one-box__text {
   flex-grow: 5;
-  //flex-basis: calc($tablet - 29.375rem - (3 * $huge));
-  //width: calc($tablet - 29.375rem - (3 * $huge));
 }
 
 @media only screen and (min-width: $desktop) {
-  .section-boxy {
+  .section-one-box {
     flex-wrap: nowrap;
-
-    & > div {
-      margin-right: $huge;
-    }
   }
 }
 
+/** TWO BOXES
+*/
 
-.section-two-boxy {
+.section-two-boxes {
   flex-wrap: wrap;
 }
 
-.section-two-boxy__head {
+.section-two-boxes__head {
   width: 100%;
 }
 
-.section-two-boxy__text-wrapper {
+.section-two-boxes__text-wrapper {
   display: flex;
 }
 
-.section-two-boxy__text {
+.section-two-boxes__text {
   max-width: 40rem;
   margin-right: $huge;
 }
 
-.section-two-boxy__box {
+.section-two-boxes__box {
   background-color: $lightblue;
   padding: $small;
   min-width: 21rem;
@@ -64,47 +58,50 @@
   }
 }
 
-.section-three-boxy {
+/** THREE BOXES
+*/
+
+.section-three-boxes {
   flex-wrap: wrap;
 }
 
-.section-three-boxy__head {
+.section-three-boxes__head {
   width: 100%;
 }
 
-.section-three-boxy__text-wrapper {
+.section-three-boxes__text-wrapper {
   display: flex;
   flex-wrap: wrap;
-  gap: $small;
+  gap: $min;
 }
 
-.section-three-boxy__box {
-  //width: calc((100vw - (2 * $huge) - (2 * $small)) / 3);
+.section-three-boxes__box {
   background-color: $lightblue;
   padding: $small;
-
-  max-width: none;
-  //max-width: calc(33% - ());
-  flex-grow: 1;
-  //margin: 0;
-
-  &:last-child {
-    //margin: 0;
-  }
+  min-width: 27%;
+  flex: 1 1 0;
 }
 
-@media only screen and (min-width: $desktop){
-  .section-three-boxy__box {
-    max-width:20rem;
-    //margin: 0 $small $small 0;
-
-    &:last-child {
-      //margin: 0 0 $small 0;
-    }
-  }
-}
-
-.section-three-boxy__box > h3 {
+.section-three-boxes__box > h3 {
   margin-bottom: $big;
 }
 
+
+/** FOUR BOXES
+*/
+
+.section-four-boxes {
+  flex-wrap: wrap;
+  gap: $min;
+}
+
+.section-four-boxes__head {
+  width: 100%;
+}
+
+.section-four-boxes__box {
+  background-color: $lightblue;
+  padding: $normal;
+  min-width: 40%;
+  flex: 1 1 0;
+}
