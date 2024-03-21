@@ -1,5 +1,6 @@
 .section-cta {
-  background-color: $brown;
+  background-color: $backgroundblack;
+  flex-direction: column;
 }
 
 .section-cta__headline {
@@ -17,7 +18,7 @@
 .section-cta a.section-cta__button {
   margin: 2.6875rem auto $huge;
   padding: 0.5rem 2.5rem;
-  color: $blue;
-  border: 0.125rem solid $blue;
+  color: $buttonblue;
+  border: 0.125rem solid $buttonblue;
   border-radius: 0.5rem;
 }

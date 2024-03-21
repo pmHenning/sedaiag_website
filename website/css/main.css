@@ -308,7 +308,8 @@ section {
 }
 
 .section-cta {
-  background-color: #8D8D8D;
+  background-color: #1A1A1A;
+  flex-direction: column;
 }
 
 .section-cta__headline {
@@ -326,8 +327,8 @@ section {
 .section-cta a.section-cta__button {
   margin: 2.6875rem auto 6.25rem;
   padding: 0.5rem 2.5rem;
-  color: #346DF5;
-  border: 0.125rem solid #346DF5;
+  color: #34A4D1;
+  border: 0.125rem solid #34A4D1;
   border-radius: 0.5rem;
 }
 
