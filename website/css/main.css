@@ -169,6 +169,7 @@ section {
   margin: 0 1.5rem;
   height: 1.5625rem;
   display: flex;
+  align-items: center;
 }
 .header__wrapper > div:nth-child(2) {
   margin-right: auto;
@@ -203,7 +204,7 @@ section {
 }
 @media only screen and (min-width: 1400px) {
   .header__wrapper {
-    max-width: 75rem;
+    max-width: calc(1400px - 12.5rem);
     margin: 0 auto;
   }
 }
@@ -362,8 +363,19 @@ section {
 }
 
 .section-team__person {
-  min-width: 20%;
+  min-width: 16rem;
+  max-width: 18.75rem;
   flex: 1 1 0;
+}
+.section-team__person img {
+  display: block;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  margin-bottom: 1.5rem;
+}
+.section-team__person h4 {
+  margin-bottom: 0.75rem;
 }
 
 .section-headline {

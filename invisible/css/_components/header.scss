@@ -6,6 +6,7 @@ header {
   margin: 0 $small;
   height: 1.5625rem;
   display: flex;
+  align-items: center;
 
   & > div:nth-child(2) {
     margin-right: auto;
@@ -47,7 +48,7 @@ header {
 
 @media only screen and (min-width: $desktop){
   .header__wrapper {
-    max-width: calc(87.5rem - 2 * $huge);
+    max-width: calc($desktop - 2 * $huge);
     margin: 0 auto;
   }
 }

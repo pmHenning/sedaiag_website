@@ -12,7 +12,19 @@
 }
 
 .section-team__person {
-  min-width: 20%;
+  min-width: 16rem;
+  max-width: 18.75rem;
   flex: 1 1 0;
-}
 
+  & img {
+    display: block;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    margin-bottom: $small;
+  }
+
+  & h4 {
+    margin-bottom: $min;
+  }
+}
