@@ -1,4 +1,18 @@
-
+.section-team {
+  flex-wrap: wrap;
+}
 .section-team__head {
   width: 100%;
 }
+
+.section-team__person-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $normal;
+}
+
+.section-team__person {
+  min-width: 20%;
+  flex: 1 1 0;
+}
+
