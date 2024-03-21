@@ -1,0 +1,19 @@
+version: '2'
+
+#networks:
+  #backend:
+
+services:
+  php:
+    container_name: sedaiAGwebsite
+    image: henningk/php7env
+    ports:
+      - "804:80"
+    restart: always
+      #environment:
+    #- WP_ENV=development
+    #networks:
+      #- backend
+    working_dir: /var/www/html
+    volumes:
+      - ./website:/var/www/html

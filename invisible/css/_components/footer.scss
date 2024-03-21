@@ -1,0 +1,12 @@
+.footer__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.footer__navi {
+  margin: $huge auto $normal auto;
+}
+
+.footer__navi > * {
+  padding: 0 $small;
+}

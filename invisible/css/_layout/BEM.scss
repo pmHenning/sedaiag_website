@@ -1,0 +1,84 @@
+
+.inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  //font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.standard-font {
+  font-size: $fifteen;
+  color: $black;
+  letter-spacing: -0.02375rem;
+  line-height: 1.5;
+  font-weight: 400;
+  margin-bottom: $small;
+}
+
+.h1-text {
+  font-size: $thirtynine;
+  color: $black;
+  font-weight: 600;
+  margin-bottom: $small;
+}
+
+.h2-text,
+.h2-text > h2 {
+  font-size: $twentyseven;
+  letter-spacing: -0.03625rem;
+  font-weight: 600;
+  color: $black;
+  margin-bottom: $small;
+}
+
+.h3-text {
+  font-size: $nineteen;
+  letter-spacing: -0.033125rem;
+  color: $black;
+  font-weight: 600;
+  margin-bottom: $small;
+}
+
+.text--fett {
+  font-weight: 600 !important;
+  line-height: 1.15 !important;
+}
+
+.text--paragraph {
+  padding-top: $small !important;
+  padding-bottom: $min !important;
+}
+
+.text--italic {
+  font-style: italic !important;
+}
+
+.spacer {
+  height: $huge;
+}
+
+@media only screen and (min-width: $tablet){
+  .standard-font {
+
+  }
+
+  .h1-text {
+    font-size: $thirtynine;
+  }
+
+  .h2-text,
+  .h2-text > h2 {
+    font-size: 2.4375rem;
+  }
+
+  .h3-text {
+    font-size: 1.3125rem;
+  }
+}

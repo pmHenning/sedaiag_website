@@ -1,0 +1,26 @@
+
+.section-faq {
+  justify-content: left;
+}
+
+.section-faq__headline {
+
+}
+
+.section-faq__table {
+}
+
+.section-faq__table-question,
+.section-faq__table-answer {
+  display: inline-block;
+}
+
+
+@media only screen and (min-width: $laptop) {
+  .section-faq__table-question {
+    width: 22.5rem
+  }
+  .section-faq__table-answer {
+    width: calc($tablet - 22.5rem);
+  }
+}

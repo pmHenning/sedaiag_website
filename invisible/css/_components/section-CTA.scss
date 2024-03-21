@@ -1,0 +1,23 @@
+.section-cta {
+  background-color: $brown;
+}
+
+.section-cta__headline {
+  margin: $huge auto 0;
+  h2 {
+    color: $white;
+  }
+}
+
+.section-cta__text {
+  margin: 1.25rem auto 0;
+  color: $white;
+}
+
+.section-cta a.section-cta__button {
+  margin: 2.6875rem auto $huge;
+  padding: 0.5rem 2.5rem;
+  color: $blue;
+  border: 0.125rem solid $blue;
+  border-radius: 0.5rem;
+}

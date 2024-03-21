@@ -1,0 +1,21 @@
+
+.section-four-boxes {
+  flex-wrap: wrap;
+}
+
+.section-four-boxes__head {
+  width: 100%;
+}
+
+.section-four-boxes__box {
+  background-color: $lightblue;
+  padding: $normal;
+  min-width: 33rem;
+  max-width: 35rem;
+  margin: 0 $min $min 0;
+
+  //&:last-child {
+  //  margin: 0;
+  //}
+
+}

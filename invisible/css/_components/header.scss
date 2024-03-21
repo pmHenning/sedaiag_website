@@ -1,0 +1,40 @@
+header {
+}
+
+.header__wrapper {
+  padding: 22px $huge 14px $huge;
+  height: 1.5625rem;
+  display: flex;
+  align-items: center;
+
+  & > div:nth-child(2) {
+    margin-right: auto;
+  }
+}
+
+.header__logo {
+  font-size: 1.25rem;
+  letter-spacing: -0.0375rem;
+  font-weight: 600;
+  color: #3D3D3D;
+  @extend .montserrat;
+}
+
+.header__navi a {
+  padding: 0.25rem 0 0.25rem 1.75rem;
+}
+
+
+.header__lang {
+visibility: hidden;
+
+  .header__lang-en {
+    padding: 0.15rem 0.25rem;
+    border-right: $black 2px solid;
+    margin-left: 1rem;
+  }
+}
+
+.header--active {
+  font-weight: 700 !important;
+}
