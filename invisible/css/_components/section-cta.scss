@@ -1,6 +1,11 @@
 .section-cta {
   background-color: $backgroundblack;
   flex-direction: column;
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .section-cta__headline {
@@ -21,4 +26,9 @@
   color: $buttonblue;
   border: 0.125rem solid $buttonblue;
   border-radius: 0.5rem;
+
+  &:hover {
+    color: white;
+    background: #34A4D1;
+  }
 }

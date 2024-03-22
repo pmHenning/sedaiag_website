@@ -8,6 +8,10 @@
   & > div {
     padding: $normal;
   }
+
+  &__text {
+    margin-top: $small;
+  }
 }
 
 .section-one-box__left-box {
@@ -18,13 +22,16 @@
   padding: $normal;
 }
 
-.section-one-box__text {
-  flex-grow: 5;
-}
-
 @media only screen and (min-width: $desktop) {
   .section-one-box {
     flex-wrap: nowrap;
+  }
+}
+@media only screen and (max-width: $tablet) {
+  .section-one-box {
+    &__left-box {
+      min-width: initial;
+    }
   }
 }
 
@@ -58,6 +65,23 @@
   }
 }
 
+@media screen and (max-width: $laptop) {
+  .section-two-boxes {
+    &__text-wrapper {
+      flex-direction: column;
+    }
+
+    &__text {
+      max-width: initial;
+      margin-right: initial;
+    }
+
+    &__box {
+      min-width: initial;
+    }
+  }
+}
+
 /** THREE BOXES
 */
 
@@ -86,6 +110,19 @@
   margin-bottom: $big;
 }
 
+@media screen and (max-width: $tablet) {
+  .section-three-boxes {
+    &__text-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: $min;
+    }
+
+    &__box {
+      min-width: initial;
+    }
+  }
+}
 
 /** FOUR BOXES
 */

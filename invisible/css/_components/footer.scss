@@ -10,3 +10,19 @@
 .footer__navi > * {
   padding: 0 $small;
 }
+
+@media screen and (max-width: $tablet) {
+  .footer {
+    &__navi {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      gap: $small;
+      margin: $normal auto;
+    }
+
+    &__copyright {
+      margin-top: $normal;
+    }
+  }
+}
