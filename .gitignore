@@ -1,0 +1,30 @@
+.DS_Store
+Thumbs.db
+
+.env
+.idea/
+.vs/
+.project
+.classpath
+*.launch
+.settings/
+obj/
+bin/
+/dist
+/tmp
+**/node_modules/**
+**/*.log
+/coverage/*
+/.angular/cache
+/.sass-cache
+
+# vim swap files
+*~
+
+# cypress
+**/videos
+**/screenshots
+
+# snapshots
+*.received.*
+*.swp
