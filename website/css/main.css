@@ -168,6 +168,13 @@ section {
   padding: 0 1.5rem;
 }
 
+header {
+  position: fixed;
+  background-color: white;
+  z-index: 1;
+  width: 100%;
+}
+
 .header__wrapper {
   padding: 22px 0 14px 0;
   margin: 0 1.5rem;
@@ -177,6 +184,10 @@ section {
 }
 .header__wrapper > div:nth-child(2) {
   margin-right: auto;
+}
+
+.header-spacer {
+  height: 1.5625rem;
 }
 
 .header__logo {

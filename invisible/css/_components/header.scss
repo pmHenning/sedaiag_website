@@ -1,4 +1,8 @@
 header {
+  position: fixed;
+  background-color: white;
+  z-index: 1;
+  width: 100%;
 }
 
 .header__wrapper {
@@ -11,6 +15,10 @@ header {
   & > div:nth-child(2) {
     margin-right: auto;
   }
+}
+
+.header-spacer {
+  height: 1.5625rem;
 }
 
 .header__logo {
