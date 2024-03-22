@@ -151,6 +151,10 @@ section {
     font-size: 1.3125rem;
   }
 }
+.hide {
+  visibility: hidden !important;
+}
+
 .footer__wrapper {
   display: flex;
   align-items: center;
@@ -410,8 +414,10 @@ section {
   max-width: 768px;
 }
 
-.section-testimonial__cite {
-  max-width: 768px;
+.section-privacy.wrapper {
+  background-color: #F7F7F7;
+  display: block;
+  padding: 6.25rem;
 }
 
 /*# sourceMappingURL=main.css.map */
