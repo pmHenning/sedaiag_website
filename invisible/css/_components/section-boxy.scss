@@ -1,32 +1,53 @@
-
-/** ONE BOX - split into to small ;-)
+/** MANY BOX - split into to small ;-)
 */
-
-.section-one-box {
-  flex-wrap: wrap-reverse;
-
-  & > div {
-    padding: $normal;
-  }
+.section-many-box {
+  display: block;
 }
 
-.section-one-box__left-box {
+.section-many-box__left {
+  padding: $small $huge $huge 0;
+}
+
+.section-many-box__right {
+  gap: $small;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.section-many-box__box {
   background-color: $lightblue;
-  min-width: 23rem;
-  max-height: 25rem;
-  flex-grow: 4;
-  padding: $normal;
-}
-
-.section-one-box__text {
-  flex-grow: 5;
-}
-
-@media only screen and (min-width: $desktop) {
-  .section-one-box {
-    flex-wrap: nowrap;
+  padding: $small;
+  & h3 {
+    height: 3.125rem;
   }
 }
+
+.section-many-box__box-small {
+
+}
+
+.section-many-box__box-big {
+}
+
+@media only screen and (min-width: $tablet) {
+  .section-many-box__right {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (min-width: $laptop) {
+  .section-many-box {
+    display: flex;
+  }
+  .section-many-box__left {
+    width: 50%;
+  }
+  .section-many-box__right {
+    width: 50%;
+  }
+}
+
 
 /** TWO BOXES
 */

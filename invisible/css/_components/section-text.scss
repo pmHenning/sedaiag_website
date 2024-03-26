@@ -1,36 +1,4 @@
-.section-text {
-  display: flex;
-  align-items: center;
-
-  .section-text__headline {
-    margin-bottom: $small;
-    max-width: $tablet;
-    justify-content: left;
-    justify-self: left;
-  }
-
-  .section-text__textbox {
-    margin-bottom: $big;
-    max-width: $tablet;
-  }
-
-  img {
-    max-width: $tablet;
-  }
-}
-
-@media only screen and (min-width: $tablet) {
-  .section-text__textbox {
-
-  }
-}
-
-@media only screen and (min-width: $laptop) {
-
-}
-
-@media only screen and (min-width: $max-width) {
-  .section-text__textbox {
-
-  }
+.section-text__text {
+  max-width: 43.75rem;
+  margin: 0 auto;
 }

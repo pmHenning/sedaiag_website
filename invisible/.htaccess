@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Passwortgeschuetzter Bereich"
+AuthUserFile /var/www/vhosts/sedai.ag/httpdocs/.htpasswd
+Require valid-user
