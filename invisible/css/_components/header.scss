@@ -1,18 +1,18 @@
 header {
-  position: fixed;
+  position: sticky;
+  top: 0;
   background-color: white;
   z-index: 1;
-  width: 100%;
 }
 
 .header__wrapper {
-  padding: 22px 0 14px 0;
-  margin: 0 $small;
-  height: 1.5625rem;
   display: flex;
   align-items: center;
+  height: 1.5625rem;
+  padding-top: $twentythree;
+  padding-bottom: $fifteen;
 
-  & > div:nth-child(2) {
+  &__lang {
     margin-right: auto;
   }
 }
@@ -48,15 +48,18 @@ header {
   font-weight: 700 !important;
 }
 
-@media only screen and (min-width: $tablet){
-  .header__wrapper {
-    margin: 0 $huge;
-  }
-}
+@media only screen and (max-width: $phone){
+  .header {
+    &__wrapper {
+      justify-content: space-between;
+    }
 
-@media only screen and (min-width: $desktop){
-  .header__wrapper {
-    max-width: calc($desktop - 2 * $huge);
-    margin: 0 auto;
+    &__lang {
+      margin-right: initial;
+    }
+
+    &__navi {
+      display: none;
+    }
   }
 }

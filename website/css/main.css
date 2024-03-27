@@ -168,21 +168,33 @@ section {
   padding: 0 1.5rem;
 }
 
+@media screen and (max-width: 768px) {
+  .footer__navi {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 1.5rem;
+    margin: 2rem auto;
+  }
+  .footer__copyright {
+    margin-top: 2rem;
+  }
+}
 header {
-  position: fixed;
+  position: sticky;
+  top: 0;
   background-color: white;
   z-index: 1;
-  width: 100%;
 }
 
 .header__wrapper {
-  padding: 22px 0 14px 0;
-  margin: 0 1.5rem;
-  height: 1.5625rem;
   display: flex;
   align-items: center;
+  height: 1.5625rem;
+  padding-top: 1.4375rem;
+  padding-bottom: 0.9375rem;
 }
-.header__wrapper > div:nth-child(2) {
+.header__wrapper__lang {
   margin-right: auto;
 }
 
@@ -212,15 +224,15 @@ header {
   font-weight: 700 !important;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 480px) {
   .header__wrapper {
-    margin: 0 6.25rem;
+    justify-content: space-between;
   }
-}
-@media only screen and (min-width: 1400px) {
-  .header__wrapper {
-    max-width: calc(1400px - 12.5rem);
-    margin: 0 auto;
+  .header__lang {
+    margin-right: initial;
+  }
+  .header__navi {
+    display: none;
   }
 }
 /** MANY BOX - split into to small ;-)
@@ -292,6 +304,18 @@ header {
   margin-bottom: 0.75rem;
 }
 
+@media screen and (max-width: 1024px) {
+  .section-two-boxes__text-wrapper {
+    flex-direction: column;
+  }
+  .section-two-boxes__text {
+    max-width: initial;
+    margin-right: initial;
+  }
+  .section-two-boxes__box {
+    min-width: initial;
+  }
+}
 /** THREE BOXES
 */
 .section-three-boxes {
@@ -319,6 +343,16 @@ header {
   margin-bottom: 3.5rem;
 }
 
+@media screen and (max-width: 768px) {
+  .section-three-boxes__text-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  .section-three-boxes__box {
+    min-width: initial;
+  }
+}
 /** FOUR BOXES
 */
 .section-four-boxes {
@@ -341,6 +375,10 @@ header {
   background-color: #1A1A1A;
   flex-direction: column;
 }
+.section-cta .wrapper {
+  display: flex;
+  flex-direction: column;
+}
 
 .section-cta__headline {
   margin: 6.25rem auto 0;
@@ -360,6 +398,10 @@ header {
   color: #34A4D1;
   border: 0.125rem solid #34A4D1;
   border-radius: 0.5rem;
+}
+.section-cta a.section-cta__button:hover {
+  color: white;
+  background: #34A4D1;
 }
 
 .section-faq {
@@ -427,12 +469,24 @@ header {
   margin: 2rem 0 3.5rem;
 }
 
+@media screen and (max-width: 768px) {
+  .section-team__person-wrapper {
+    justify-content: center;
+  }
+}
 .section-headline {
   background-image: url("../img/1600land_u300.png");
   background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 .section-headline .h1-text {
   margin: 6.25rem auto 18.75rem;
+}
+@media screen and (max-width: 768px) {
+  .section-headline .h1-text {
+    font-size: 1.625rem;
+  }
 }
 
 .section-text__text {
