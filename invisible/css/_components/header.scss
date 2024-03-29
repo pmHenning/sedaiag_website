@@ -7,12 +7,16 @@ header {
 
 .header__wrapper {
   display: flex;
-  align-items: center;
+  //align-items: center;
   height: 1.5625rem;
   padding-top: $twentythree;
   padding-bottom: $fifteen;
 
   &__lang {
+    margin-right: auto;
+  }
+
+  &__navi {
     margin-right: auto;
   }
 }
@@ -30,7 +34,6 @@ header {
 }
 
 .header__navi a {
-  visibility: hidden;
   padding: 0.25rem 0 0.25rem 1.75rem;
 }
 
