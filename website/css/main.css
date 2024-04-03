@@ -192,11 +192,10 @@ header {
   height: 1.5625rem;
   padding-top: 1.4375rem;
   padding-bottom: 0.9375rem;
+  margin: 0 1.5rem;
 }
-.header__wrapper__lang {
-  margin-right: auto;
-}
-.header__wrapper__navi {
+
+.header__lang {
   margin-right: auto;
 }
 
@@ -456,7 +455,8 @@ header {
 }
 .section-team__person img {
   display: block;
-  max-width: 100%;
+  max-width: 80%;
+  border-radius: 10%;
   width: auto;
   height: auto;
   margin-bottom: 1.5rem;
