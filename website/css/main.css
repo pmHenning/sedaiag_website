@@ -135,6 +135,10 @@ section {
   font-style: italic !important;
 }
 
+.text--uppercase {
+  text-transform: uppercase !important;
+}
+
 .spacer {
   height: 6.25rem;
 }
@@ -400,6 +404,18 @@ header {
   border-radius: 0.5rem;
 }
 .section-cta a.section-cta__button:hover {
+  color: white;
+  background: #34A4D1;
+}
+
+.section-downloads__button {
+  margin: 2.6875rem auto 6.25rem;
+  padding: 0.5rem 2.5rem;
+  color: #34A4D1;
+  border: 0.125rem solid #34A4D1;
+  border-radius: 0.5rem;
+}
+.section-downloads__button:hover {
   color: white;
   background: #34A4D1;
 }

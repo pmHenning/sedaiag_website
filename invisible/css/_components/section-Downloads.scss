@@ -1,0 +1,15 @@
+.section-downloads__wrapper {
+}
+
+.section-downloads__button {
+  margin: 2.6875rem auto $huge;
+  padding: 0.5rem 2.5rem;
+  color: $buttonblue;
+  border: 0.125rem solid $buttonblue;
+  border-radius: 0.5rem;
+
+  &:hover {
+    color: white;
+    background: #34A4D1;
+  }
+}
