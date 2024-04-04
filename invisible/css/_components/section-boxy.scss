@@ -20,34 +20,8 @@
 
   & h3 {
     height: 3.125rem;
-    //min-width: 23rem;
-    //max-height: 25rem;
-    //flex-grow: 4;
-    //padding: $normal;
-    //
   }
 }
-
-//@media only screen and (min-width: $desktop) {
-//  .section-one-box {
-//    flex-wrap: nowrap;
-//  }
-//}
-//
-//@media only screen and (max-width: $tablet) {
-//  .section-one-box {
-//    &__left-box {
-//      min-width: initial;
-//    }
-//  }
-//}
-
-//.section-many-box__box-small {
-//
-//}
-//
-//.section-many-box__box-big {
-//}
 
 @media only screen and (min-width: $tablet) {
   .section-many-box__right {

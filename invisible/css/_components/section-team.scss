@@ -1,6 +1,7 @@
 .section-team {
   flex-wrap: wrap;
 }
+
 .section-team__head {
   width: 100%;
 }
@@ -9,6 +10,10 @@
   display: flex;
   flex-wrap: wrap;
   gap: $normal;
+}
+
+.section-team__spacer {
+  margin: $huge auto;
 }
 
 .section-team__person {
@@ -35,7 +40,7 @@
   margin: $normal 0 $big;
 }
 
-@media screen and (max-width: $tablet){
+@media screen and (max-width: $tablet) {
   .section-team__person-wrapper {
     justify-content: center;
   }

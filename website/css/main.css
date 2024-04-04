@@ -408,6 +408,10 @@ header {
   background: #34A4D1;
 }
 
+.section-downloads__wrapper {
+  margin: 0 auto 6.25rem;
+}
+
 .section-downloads__button {
   margin: 2.6875rem auto 6.25rem;
   padding: 0.5rem 2.5rem;
@@ -431,7 +435,7 @@ header {
 .section-faq__item {
   display: flex;
   gap: 1.5rem;
-  padding-top: 1.4375rem;
+  padding: 1.4375rem 0;
 }
 .section-faq__item:not(:first-child) {
   border-top: 1px solid #000;
@@ -462,6 +466,10 @@ header {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
+}
+
+.section-team__spacer {
+  margin: 6.25rem auto;
 }
 
 .section-team__person {
