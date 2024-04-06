@@ -1,4 +1,33 @@
 .section-text__text {
-  max-width: 43.75rem;
+  max-width: 64rem;
+  text-align: center;
   margin: 0 auto;
+}
+
+.section-text--black {
+  background-color: $backgroundblack !important;
+  .text-standard,
+  .h1-text,
+  .h2-text,
+  .h3-text {
+    color: $white !important;
+  }
+}
+
+.section-text--grey {
+  background-color: $lightblue !important;
+  padding-top: $normal !important;
+  padding-bottom: 0 !important;
+  margin-top: $normal !important;
+  margin-bottom: $normal !important;
+}
+
+.section-text--narrow-800 {
+  max-width: 50rem !important;
+  margin: 0 auto !important;
+}
+
+.section-text--narrow {
+  max-width: 31.25rem !important;
+  margin: 0 auto !important;
 }

@@ -1,17 +1,20 @@
-.section-downloads__wrapper {
-margin: 0 auto $huge;
+.section-downloads {
+  padding: calc(2*$huge) 0;
+  background-color: $lightblue;
+  flex-direction: column;
+  text-align: center; //TODO: solve more beautiful
+}
 
+.section-downloads__wrapper{
+  margin: 0 auto;
 }
 
 .section-downloads__button {
   margin: 2.6875rem auto $huge;
   padding: 0.5rem 2.5rem;
-  color: $buttonblue;
-  border: 0.125rem solid $buttonblue;
-  border-radius: 0.5rem;
+  @extend .h3-text;
 
   &:hover {
-    color: white;
-    background: #34A4D1;
+    color: $buttonblue;
   }
 }

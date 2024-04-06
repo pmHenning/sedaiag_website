@@ -2,6 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+html body section.wrapper {
+  padding-top: $huge;
+  padding-bottom: $huge;
+}
+
 html {
   font-size: 16px;
   @extend .inter;
@@ -12,13 +17,8 @@ html {
   padding: 0 $normal;
 }
 
-//.wrapper > * {
-//  margin: 0 auto;
-//}
-
 section {
   display: flex;
-  //flex-direction: column;
 }
 
 @media only screen and (min-width: $tablet){
@@ -28,9 +28,7 @@ section {
 }
 
 @media only screen and (min-width: $laptop){
-  .wrapper > * {
-    //justify-content: center;
-  }
+
 }
 
 @media only screen and (min-width: $desktop){

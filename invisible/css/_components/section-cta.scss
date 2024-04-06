@@ -1,23 +1,17 @@
 .section-cta {
-  background-color: $backgroundblack;
-  flex-direction: column;
-
   .wrapper {
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
   }
 }
 
 .section-cta__headline {
   margin: $huge auto 0;
-  h2 {
-    color: $white;
-  }
 }
 
 .section-cta__text {
-  margin: 1.25rem auto 0;
-  color: $white;
+  margin: 0 auto 0;
 }
 
 .section-cta a.section-cta__button {
@@ -32,3 +26,15 @@
     background: #34A4D1;
   }
 }
+
+.section-cta.section-cta--black {
+  background-color: $backgroundblack;
+
+  .section-cta__text {
+    color: $white;
+  }
+  .section-cta__headline h2 {
+    color: $white;
+  }
+}
+
