@@ -93,49 +93,49 @@ section.section-x-box {
 //}
 
 
-//.section-two-boxes {
-//  flex-wrap: wrap;
-//}
-//
-//.section-two-boxes__head {
-//  width: 100%;
-//}
-//
-//.section-two-boxes__text-wrapper {
-//  display: flex;
-//}
-//
-//.section-two-boxes__text {
-//  max-width: 40rem;
-//  margin-right: $huge;
-//}
-//
-//.section-two-boxes__box {
-//  background-color: $lightblue;
-//  padding: $small;
-//  min-width: 21rem;
-//
-//  &:first-child {
-//    margin-bottom: $min;
-//  }
-//}
-//
-//@media screen and (max-width: $laptop) {
-//  .section-two-boxes {
-//    &__text-wrapper {
-//      flex-direction: column;
-//    }
-//
-//    &__text {
-//      max-width: initial;
-//      margin-right: initial;
-//    }
-//
-//    &__box {
-//      min-width: initial;
-//    }
-//  }
-//}
+.section-two-boxes {
+  flex-wrap: wrap;
+}
+
+.section-two-boxes__head {
+  width: 100%;
+}
+
+.section-two-boxes__text-wrapper {
+  display: flex;
+}
+
+.section-two-boxes__text {
+  max-width: 40rem;
+  margin-right: $huge;
+}
+
+.section-two-boxes__box {
+  background-color: $lightblue;
+  padding: $small;
+  min-width: 21rem;
+
+  &:first-child {
+    margin-bottom: $min;
+  }
+}
+
+@media screen and (max-width: $laptop) {
+  .section-two-boxes {
+    &__text-wrapper {
+      flex-direction: column;
+    }
+
+    &__text {
+      max-width: initial;
+      margin-right: initial;
+    }
+
+    &__box {
+      min-width: initial;
+    }
+  }
+}
 
 /** THREE BOXES
 */
@@ -204,4 +204,7 @@ section.section-x-box {
   padding: $normal;
   min-width: 40%;
   flex: 1 1 0;
+  > h3 {
+
+  }
 }
