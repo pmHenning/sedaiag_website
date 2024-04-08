@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 html, body, div, span, applet, object, iframe,
@@ -225,6 +226,7 @@ header {
   padding-top: 1.4375rem;
   padding-bottom: 0.9375rem;
   margin: 0 1.5rem;
+  align-items: center;
 }
 
 .header__lang {
@@ -267,6 +269,48 @@ header {
     display: none;
   }
 }
+section.section-accordion {
+  display: block;
+}
+
+.section-accordion__folder {
+  border-top: solid 1px black;
+  background-color: unset;
+  cursor: pointer;
+  padding: 1.5rem 2rem 1.5rem 1.5rem;
+  width: 100%;
+  text-align: left;
+  outline: none;
+  transition: 0.4s;
+  margin-bottom: 0;
+}
+
+.section-accordion__panel--last-folder {
+  border-bottom: solid 1px black;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.section-accordion__panel {
+  padding: 0 1.5rem;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  max-height: 0;
+}
+
+/* Buttons after the headline
+*/
+.section-accordion__folder:after {
+  content: "➕"; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.section-accordion__folder--active:after {
+  content: "➖"; /* Unicode character for "minus" sign (-) */
+}
+
 /** MANY BOX - split into to small ;-)
 */
 .section-many-box {
@@ -320,9 +364,12 @@ section.section-x-box {
   grid-template-columns: repeat(1, 1fr);
 }
 
+.section-x-box__box--grey {
+  background-color: #f0f5f7;
+  padding: 1.5rem;
+}
 .section-x-box__head {
   width: 100%;
-  text-align: center;
 }
 
 .section-x-box--grey .section-x-box__box {
@@ -395,7 +442,6 @@ section.section-x-box {
 
 .section-three-boxes__head {
   width: 100%;
-  text-align: center;
 }
 
 .section-three-boxes__text-wrapper {
@@ -409,11 +455,6 @@ section.section-x-box {
   padding: 1.5rem;
   min-width: 27%;
   flex: 1 1 0;
-}
-
-.section-three-boxes__box > h3.section-three-boxes__box--multiplier-hack {
-  height: auto;
-  margin-bottom: 0.5rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -484,6 +525,11 @@ section.section-x-box {
   color: #F7F7F7;
 }
 
+.section-cta__headline--narrow {
+  max-width: 800px;
+  text-align: center;
+}
+
 .section-downloads {
   padding: 12.5rem 0;
   background-color: #f0f5f7;
@@ -543,10 +589,9 @@ section.section-x-box {
 
 .section-team__head {
   width: 100%;
-  text-align: center;
 }
 .section-team__head h2 {
-  margin-bottom: 3.5rem;
+  margin-bottom: 2rem;
 }
 .section-team__head h3 {
   margin-bottom: 2rem;

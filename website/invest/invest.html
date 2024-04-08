@@ -3,7 +3,9 @@
 <head>
     <meta name='copyright' content='Copyright 2024. SedAI AG. All Rights Reserved.'>
     <meta charset="utf-8">
-    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
     <!--    <link rel="shortcut icon" href="favicon.ico">-->
     <title>SedAI AG</title>
     <link rel="stylesheet" href="../css/main.css">
@@ -30,63 +32,68 @@
     </div>
 </section>
 
-
-<section class="section-text wrapper">
-    <div class="section-text__text">
-        <h1 class="h2-text">Invest in our ESG software now and join us in leading the sustainable transformation of the real estate industry.</h1>
-        <p class="text-standard section-text--narrow">This is your opportunity to take an active part in a success story with exponential growth and contribute to a sustainable world simultaneously.</p>
-    </div>
-</section>
-
-<section class="section-text wrapper section-text--grey">
-    <div class="section-text__text">
-        <p class="h2-text text--left">“Green buildings achieved an average capital value premium of more than 20%.”</p>
-        <p class="h3-text text--left">JLL, January 17, 2023</p>
-    </div>
-</section>
-
-<section class="section-text wrapper">
-    <div class="section-text__text">
-        <p class="h3-text">ESG EU legislation is sweeping the real estate industry with an unprecedented</p>
-        <h2 class="h1-text">wave of change</h2>
-        <p class="text-standard section-text--narrow">Across our European neighbors, energetically inefficient buildings are no longer allowed to be rented due to new ESG legislation.</br></br>In the face of complex ESG legislation and regulations, the real estate industry structurally lacks the data and parameters needed to make the right strategic investment and renovation decisions.</p>
-    </div>
-</section>
-
-<section class="section-text wrapper section-text--black">
-    <div class="section-text__text">
-        <h2 class="h1-text">Our ESG software</h2>
-        <p class="h3-text">enables real estate companies to navigate the ever-changing jungle of regulations and reporting obligations even without expert knowledge of ESG legislation.</p>
-        <p class="text-standard">The revolutionary software helps individual property owners, large real estate portfolios, and entire cities to develop, visualize, and implement sustainability strategies despite poor data.</p>
-    </div>
-</section>
-
 <section class="section-x-box wrapper">
     <div class="section-x-box__box-wrapper section-x-box--two-boxes">
-    <div class="section-x-box__box">
-        <h2 class="h3-text margin-bottom--normal">ESG-compliant investments and buildings are</br>
-            <span class="h1-text">future return winners</span></h2>
-        <p class="text-standard">ESG has the most significant impact on the performance of existing properties.</p>
-        <p class="text-standard">In the professionally managed sector alone, there are over 60 million of these existing buildings in Europe. Every property is affected by ESG legislation.</p>
-    </div>
-    <div class="section-x-box__box">
-        <h2 class="h3-text margin-bottom--normal">The market to be tapped into by SedAI has a</br>
-            <span class="h1-text">multi-billion-dollar potential</span></h2>
-        <p class="text-standard">To grow rapidly, SedAI is forming strategic alliances with cities. To this end, SedAI has partnered with the UN-Habitat initiative "Shape City."</p>
-        <p class="text-standard">SedAI aims to become the leading ESG software solution for the real estate industry. Be a part of it and invest in the market launch and growth of SedAI's market-ready ESG software.</p>
-    </div>
+        <div class="section-x-box__box section-x-box__box--height-300">
+            <h1 class="h2-text">Invest in our ESG software now and join us in leading the sustainable transformation of the real estate industry.</h1>
+            <p class="text-standard">This is your opportunity to take an active part in a success story with exponential growth and contribute to a sustainable world simultaneously.</p>
+        </div>
+        <div class="section-x-box__box section-x-box__box--grey section-x-box__box--height-300">
+            <p class="h2-text">“Green buildings achieved an average capital value premium of more than 20%.”</p>
+            <p class="h3-text">JLL, January 17, 2023</p>
+        </div>
     </div>
 </section>
 
-<section class="section-text wrapper section-text--narrow-800">
-    <div class="section-text__text">
-        <h2 class="h1-text">Become a part of it and invest in the market launch and growth of <span class="color--blue">SedAI’s market-ready ESG software</span></h2>
+<section class="section-accordion wrapper">
+    <button class="section-accordion__folder h3-text">ESG EU legislation is sweeping the real estate industry with an unprecedented wave of change</button>
+    <div class="section-accordion__panel">
+        <p class="text-standard">Across our European neighbors, energetically inefficient buildings are no longer allowed to be rented due to new ESG legislation.</br></br>In the face of complex ESG legislation and regulations, the real estate industry structurally lacks the data and parameters needed to make the right strategic investment and renovation decisions.</p>
+    </div>
+    <button class="section-accordion__folder h3-text">Our ESG software enables real estate companies to navigate the ever-changing jungle of regulations and reporting obligations even without expert knowledge of ESG legislation.</button>
+    <div class="section-accordion__panel">
+        <p class="text-standard">The revolutionary software helps individual property owners, large real estate portfolios, and entire cities to develop, visualize, and implement sustainability strategies despite poor data.</p>
+    </div>
+    <button class="section-accordion__folder h3-text">ESG-compliant investments and buildings are future return winners</button>
+    <div class="section-accordion__panel">
+        <p class="text-standard">ESG has the most significant impact on the performance of existing properties.</br></br>In the professionally managed sector alone, there are over 60 million of these existing buildings in Europe. Every property is affected by ESG legislation.</p>
+    </div>
+    <button class="section-accordion__folder h3-text">The market to be tapped into by SedAI has a multi-billion-dollar potential</button>
+    <div class="section-accordion__panel section-accordion__panel--last-folder">
+        <p class="text-standard">To grow rapidly, SedAI is forming strategic alliances with cities. To this end, SedAI has partnered with the UN-Habitat initiative "Shape City." SedAI aims to become the leading ESG software solution for the real estate industry. Be a part of it and invest in the market launch and growth of SedAI's market-ready ESG software.</p>
+    </div>
+</section>
+
+
+<script>
+    var acc = document.getElementsByClassName("section-accordion__folder");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("section-accordion__folder--active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+        });
+    }
+</script>
+
+<section class="section-cta section-cta--black">
+    <div class='wrapper'>
+        <div class="section-cta__headline section-cta__headline--narrow">
+            <h2 class="h1-text">Become a part of it and invest in the growth of <span class="color--blue">SedAI’s ESG software</span></h2>
+        </div>
+        <a class="section-cta__button" href="mailto:info@sedai.ag">Contact</a>
     </div>
 </section>
 
 <section class="section-three-boxes wrapper">
     <div class="section-three-boxes__head">
-        <h2 class="h3-text margin-bottom--big">Scalability Guarantees Unmatched Access</h2>
+        <h2 class="h2-text margin-bottom--big">Scalability Guarantees Unmatched Access</h2>
     </div>
     <div class="section-three-boxes__text-wrapper">
         <div class="section-three-boxes__box">
@@ -113,9 +120,10 @@
         </div>
 
         <div class="section-three-boxes__box">
-            <h3 class="h2-text section-three-boxes__box--multiplier-hack">Multipliers</h3>
+            <h3 class="h2-text">Multipliers</h3>
+            <p class="text-standard text--fett">Who</p>
             <p class="text-standard">Project managers, real estate agents, appraisers, consultants, banks</p>
-            <p class="text-standard text--fett">Requirements:</p>
+            <p class="text-standard text--fett">Requirements</p>
             <p class="text-standard">Support for individual business cases
                 Analysis tool for customer insights
             </p>
@@ -129,26 +137,25 @@
 
 <section class="section-x-box wrapper">
     <div class="section-x-box__head">
-        <h2 class="h3-text margin-bottom--big">Strong Economics Drive the Business Model</h2>
+        <h2 class="h2-text margin-bottom--big">Strong Economics Drive the Business Model</h2>
     </div>
     <div class="section-x-box__box-wrapper section-x-box--grey section-x-box--five-boxes">
         <div class="section-x-box__box">
             <h3 class="text-standard text--fett margin-bottom--big">Market</h3>
             <p class="h1-text">62M</p>
             <p class="text-standard">Existing properties in Europe affected by ESG</p>
-            <p class="text-standard">Statistik Austria; Swiss Federal Statistical Office; Destatis Germany</p>
         </div>
 
         <div class="section-x-box__box">
             <h3 class="text-standard text--fett margin-bottom--big">ARPA</h3>
             <p class="h1-text">15K €</p>
-            <p class="text-standard">Average software revenue per customer/year (ARPA)  </p>
+            <p class="text-standard">Average software revenue per customer/year</p>
         </div>
 
         <div class="section-x-box__box">
             <h3 class="text-standard text--fett margin-bottom--big">CLV</h3>
             <p class="h1-text">10-15 Y</p>
-            <p class="text-standard">Customer lifetime in years (CLV)</p>
+            <p class="text-standard">Customer lifetime in years</p>
         </div>
         <div class="section-x-box__box">
             <h3 class="text-standard text--fett margin-bottom--big">Revenue potential</h3>
@@ -157,17 +164,20 @@
         </div>
         <div class="section-x-box__box">
             <h3 class="text-standard text--fett margin-bottom--big">Exit</h3>
-            <p class="h1-text">50m €</p>
+            <p class="h1-text">50M €</p>
             <p class="text-standard">IPO Nasdaq Nordic Investment bank Vator engaged</p>
         </div>
 
     </div>
 </section>
 
+
 <section class="section-team wrapper">
     <div class="section-team__head">
-        <h2 class="h3-text">Bright minds create future</h2>
-        <h3 class="h2-text">Founders | Management</h3>
+        <h2 class="h2-text">Founders | Management</h2>
+        <h3 class="h3-text">Bright minds create future</h3>
+            <p class="text-standard">The three founders Julian Kriesel (CEO), Dr. Henning Pentzlin, and Kaspar Neftel have a long track record of success in real estate, company building, and leadership. The management team is among the leaders in the real estate and ESG industry.
+                SedAI AG has enlisted opinion leaders and experts from the real estate, regulatory, and startup industries for its advisory board, who significantly contribute to the company's success with their knowledge, experience, and network.</p>
     </div>
 
     <div class="section-team__person-wrapper">
@@ -181,7 +191,7 @@
         <div class="section-team__person">
             <img src="../img/team/Julian_Kriesel.png" alt="Julian Kriesel at SedaiAG">
             <h4 class="h3-text">Julian Kriesel</h4>
-            <p class="text-standard text--bold">Co-Founder</p>
+            <p class="text-standard text--bold">Founder & CEO</p>
             <p class="text-standard">Civil Engineer, Real Estate Investor & Former CSO with 20 Years of Experience at HochTief, Deutsche Bahn, Engel & Volkers</p>
         </div>
 
@@ -200,13 +210,13 @@
         </div>
     </div>
 
-    <div class="section-team__head section-team__spacer">
-        <p class="text-standard">The three founders Julian Kriesel (CEO), Dr. Henning Pentzlin, and Kaspar Neftel have a long track record of success in real estate, company building, and leadership. The management team is among the leaders in the real estate and ESG industry.
-            SedAI AG has enlisted opinion leaders and experts from the real estate, regulatory, and startup industries for its advisory board, who significantly contribute to the company's success with their knowledge, experience, and network.</p>
-    </div>
+
 
     <div class="section-team__head">
         <h3 class="h2-text">Board</h3>
+        <div class="section-team__head">
+            <p class="text-standard">SedAI's board of directors consists of opinion leaders and experts from the real estate, regulatory, and startup sectors, who significantly shape SedAI's success with their knowledge, experience, and network.</p>
+        </div>
     </div>
 
     <div class="section-team__person-wrapper">
@@ -216,7 +226,7 @@
         </div>
 
         <div class="section-team__person">
-            <h4 class="h3-text">Rackham Schroder</h4>
+            <h4 class="h3-text">Rackham Schröder</h4>
             <p class="text-standard">GM Engel & Völkers Berlin</p>
         </div>
 
@@ -226,21 +236,19 @@
         </div>
 
         <div class="section-team__person">
-            <h4 class="h3-text">Anna Alex</h4>
-            <p class="text-standard">Tech Entrepreneur; Founder of Planetly</p>
+            <h4 class="h3-text">Dr. Henning Pentzlin</h4>
+            <p class="text-standard">Founder, Real Estate & Tech Investor</p>
         </div>
     </div>
 
-    <div class="section-team__head">
-        <p class="text-standard">SedAI's board of directors consists of opinion leaders and experts from the real estate, regulatory, and startup sectors, who significantly shape SedAI's success with their knowledge, experience, and network.</p>
-    </div>
+
 </section>
 
 <section class="section-cta">
     <div class='wrapper'>
         <div class="section-cta__headline"><h2 class="h2-text">Want to join the next digital event?</h2></div>
         <div class="section-cta__text text-standard">Sign up now!</div>
-        <a class="section-cta__button" href="mailto:info@sedai-now.com">Contact</a>
+        <a class="section-cta__button" href="mailto:info@sedai.ag">Contact</a>
     </div>
 </section>
 
@@ -257,7 +265,7 @@
     <div class='wrapper'>
         <div class="section-cta__headline"><h2 class="h2-text">Convinced?</h2></div>
         <div class="section-cta__text text-standard">Great! Contact us for investment opportunities!</div>
-        <a class="section-cta__button" href="mailto:info@sedai-now.com">Contact</a>
+        <a class="section-cta__button" href="mailto:info@sedai.ag">Contact</a>
     </div>
 </section>
 
@@ -286,7 +294,7 @@
         </li>
         <li class='section-faq__item'>
             <div class='section-faq__item-question'>What happens to the capital in SedAI AG?</div>
-            <div class='section-faq__item-answer text-standard'>The aim of the issuer is to develop software for the production of industry-specific and consumer-oriented content in the form of texts, audio, images, and videos based on artificial intelligence. The funds from this offer will be used for operational activities, research and development, sales and marketing, as well as for investments and expenses related to the establishment of the required IT infrastructure. Further information can be found in the securities prospectus approved by the Luxembourg CSSF and the associated German summary of the securities prospectus in the digital subscription process.</div>
+            <div class='section-faq__item-answer text-standard'>The aim of the issuer is to develop software for the valuation of real estate according to ESG criteria. The funds from this offering will be used for operations, research and development, sales and marketing as well as for investments and expenses for setting up the necessary IT infrastructure.</div>
         </li>
         <li class='section-faq__item'>
             <div class='section-faq__item-question'>Is there a register of the holders of participation certificates or do I have to book them into a custody account?</div>

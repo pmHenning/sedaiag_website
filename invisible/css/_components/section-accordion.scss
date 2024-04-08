@@ -1,0 +1,46 @@
+
+section.section-accordion {
+  display: block;
+}
+
+.section-accordion__folder {
+  border-top: solid 1px black;
+  background-color: unset;
+  cursor: pointer;
+  padding: $small $normal $small $small;
+  width: 100%;
+  text-align: left;
+  outline: none;
+  transition: 0.4s;
+  margin-bottom: 0;
+}
+
+.section-accordion__panel--last-folder {
+  border-bottom: solid 1px black;
+}
+
+.section-accordion__folder--active, .section-accordion__folder:hover {
+  //background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.section-accordion__panel {
+  padding: 0 $small;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  max-height: 0;
+}
+
+/* Buttons after the headline
+*/
+.section-accordion__folder:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.section-accordion__folder--active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}

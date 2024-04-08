@@ -56,9 +56,24 @@ section.section-x-box {
   grid-template-columns: repeat(1, 1fr);
 }
 
+.section-x-box__box--grey {
+  background-color: $lightblue;
+  padding: $small;
+  //align-items: flex-end;
+  //display: flex;
+  //flex-direction: column;
+  .h2-text {
+    //margin-top: 2rem;
+  }
+}
+
+.section-x-box__box--height-300 {
+  //height: 18.75rem;
+}
+
 .section-x-box__head {
   width: 100%;
-  text-align: center;
+  //text-align: center;
 }
 
 .section-x-box--grey .section-x-box__box {
@@ -146,7 +161,7 @@ section.section-x-box {
 
 .section-three-boxes__head {
   width: 100%;
-  text-align: center;
+  //text-align: center;
 }
 
 .section-three-boxes__text-wrapper {
@@ -162,10 +177,10 @@ section.section-x-box {
   flex: 1 1 0;
 }
 
-.section-three-boxes__box > h3.section-three-boxes__box--multiplier-hack {
-  height: auto;
-  margin-bottom: 0.5rem;
-}
+//.section-three-boxes__box > h3.section-three-boxes__box--multiplier-hack {
+//  height: auto;
+//  margin-bottom: 0.5rem;
+//}
 
 @media screen and (max-width: $tablet) {
   .section-three-boxes {
