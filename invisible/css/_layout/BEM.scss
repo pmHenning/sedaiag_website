@@ -93,21 +93,18 @@
 }
 
 @media only screen and (min-width: $tablet){
-  .text-standard {
-
-  }
 
   .h1-text {
-    font-size: $thirtynine;
+    font-size: $fourtyseven;
   }
 
   .h2-text,
   .h2-text > h2 {
-    font-size: 2.4375rem;
+    font-size: $thirtynine;
   }
 
   .h3-text {
-    font-size: 1.3125rem;
+    font-size: $twentyone;
   }
 }
 

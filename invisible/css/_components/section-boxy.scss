@@ -59,11 +59,7 @@ section.section-x-box {
 .section-x-box__box--grey {
   background-color: $lightblue;
   padding: $small;
-  //align-items: flex-end;
-  //display: flex;
-  //flex-direction: column;
   .h2-text {
-    //margin-top: 2rem;
   }
 }
 
@@ -102,11 +98,6 @@ section.section-x-box {
     grid-template-columns: repeat(5, 1fr);
   }
 }
-
-//.section-x-box__box {
-//  background-color: pink;
-//}
-
 
 .section-two-boxes {
   flex-wrap: wrap;
@@ -176,11 +167,6 @@ section.section-x-box {
   min-width: 27%;
   flex: 1 1 0;
 }
-
-//.section-three-boxes__box > h3.section-three-boxes__box--multiplier-hack {
-//  height: auto;
-//  margin-bottom: 0.5rem;
-//}
 
 @media screen and (max-width: $tablet) {
   .section-three-boxes {
