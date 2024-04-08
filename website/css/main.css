@@ -493,6 +493,7 @@ section.section-x-box {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  text-align: center;
 }
 
 .section-cta__headline {
@@ -500,7 +501,7 @@ section.section-x-box {
 }
 
 .section-cta__text {
-  margin: 0 auto 0;
+  margin: 2rem auto 0;
 }
 
 .section-cta a.section-cta__button {
@@ -521,7 +522,7 @@ section.section-x-box {
 .section-cta.section-cta--black .section-cta__text {
   color: #F7F7F7;
 }
-.section-cta.section-cta--black .section-cta__headline h2 {
+.section-cta.section-cta--black .section-cta__headline {
   color: #F7F7F7;
 }
 
