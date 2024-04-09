@@ -274,6 +274,8 @@ section.section-accordion {
 }
 
 .section-accordion__folder {
+  display: flex;
+  justify-content: space-between;
   border-top: solid 1px black;
   background-color: unset;
   cursor: pointer;
@@ -303,8 +305,7 @@ section.section-accordion {
   content: "➕"; /* Unicode character for "plus" sign (+) */
   font-size: 13px;
   color: #777;
-  float: right;
-  margin-left: 5px;
+  margin-left: 1.5rem;
 }
 
 .section-accordion__folder--active:after {

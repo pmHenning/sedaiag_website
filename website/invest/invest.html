@@ -54,7 +54,7 @@
     </button>
     <div class="section-accordion__panel">
         <p class="text-standard">Across our European neighbors, energetically inefficient buildings are no longer
-            allowed to be rented due to new ESG legislation.</br></br>In the face of complex ESG legislation and
+            allowed to be rented due to new ESG legislation.<br><br>In the face of complex ESG legislation and
             regulations, the real estate industry structurally lacks the data and parameters needed to make the right
             strategic investment and renovation decisions.</p>
     </div>
@@ -71,7 +71,7 @@
     </button>
     <div class="section-accordion__panel">
         <p class="text-standard">ESG has the most significant impact on the performance of existing
-            properties.</br></br>In the professionally managed sector alone, there are over 60 million of these existing
+            properties.<br><br>In the professionally managed sector alone, there are over 60 million of these existing
             buildings in Europe. Every property is affected by ESG legislation.</p>
     </div>
     <button class="section-accordion__folder h3-text">The market to be tapped into by SedAI has a multi-billion-dollar
@@ -378,22 +378,5 @@
     </div>
 </footer>
 </body>
-
-<script>
-    var acc = document.getElementsByClassName("section-accordion__folder");
-    var i;
-
-    for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function () {
-            this.classList.toggle("section-accordion__folder--active");
-            var panel = this.nextElementSibling;
-            if (panel.style.maxHeight) {
-                panel.style.maxHeight = null;
-            } else {
-                panel.style.maxHeight = panel.scrollHeight + "px";
-            }
-        });
-    }
-</script>
-
+<script src='../js/main.js'></script>
 </html>
