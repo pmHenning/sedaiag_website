@@ -57,7 +57,7 @@
     </button>
     <div class="section-accordion__panel">
         <p class="text-standard">Bei unseren europäischen Nachbarn dürfen energetisch ineffiziente Gebäude aufgrund
-            neuer ESG-Gesetzgebung nicht mehr vermietet werden.</br></br>Um vor dem Hintergrund der komplexen ESG
+            neuer ESG-Gesetzgebung nicht mehr vermietet werden.<br><br>Um vor dem Hintergrund der komplexen ESG
             Gesetgebung und Regulatorik die richtigen strategischen Investitions- und Sanierungsentscheidungen zu
             treffen, fehlen der Immobilienbranche strukturell die Daten und Parameter.</p>
     </div>
@@ -397,22 +397,5 @@
     </div>
 </footer>
 </body>
-
-<script>
-    var acc = document.getElementsByClassName("section-accordion__folder");
-    var i;
-
-    for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function () {
-            this.classList.toggle("section-accordion__folder--active");
-            var panel = this.nextElementSibling;
-            if (panel.style.maxHeight) {
-                panel.style.maxHeight = null;
-            } else {
-                panel.style.maxHeight = panel.scrollHeight + "px";
-            }
-        });
-    }
-</script>
-
+<script src='../js/main.js'></script>
 </html>
