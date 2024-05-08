@@ -1,5 +1,8 @@
 'use strict';
 
+/**
+ * Setup accordion
+ */
 (() => {
     const folders = document.querySelectorAll('.section-accordion__folder');
     for (let folder of folders) {
@@ -11,6 +14,9 @@
     }
 })();
 
+/**
+ * Setup contact form
+ */
 (() => {
     const contactForm = document.querySelector('#contact-form');
     if(contactForm) {
@@ -50,5 +56,23 @@
                     buttonSubmit.disabled = false;
                 })
         });
+    }
+})();
+
+/**
+ * Setup scroll buttons
+ */
+(() => {
+    const scrollToButtons = document.querySelectorAll('[data-scrollTo]');
+    if(scrollToButtons.length) {
+        scrollToButtons.forEach(button => {
+            button.addEventListener('click', (event) => {
+                const targetSelector = button.getAttribute('data-scrollTo');
+                const target = document.querySelector(targetSelector);
+                if(target) {
+                    target.scrollIntoView({ behavior: "smooth" });
+                }
+            })
+        })
     }
 })();
