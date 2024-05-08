@@ -10,3 +10,45 @@
         });
     }
 })();
+
+(() => {
+    const contactForm = document.querySelector('#contact-form');
+    if(contactForm) {
+        const buttonSubmit = contactForm.querySelector('button[type=submit]');
+        const formOverlay = contactForm.querySelector('.form__overlay');
+        contactForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+            buttonSubmit.disabled = true;
+            const data = new FormData(event.target);
+            const dataObject = Object.fromEntries(data.entries());
+            console.log(dataObject);
+            fetch('/contact', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(dataObject)
+            })
+                .then(res => res.json())
+                .then(res => {
+                    let messageText;
+                    let classList = [];
+                    if(res.status) {
+                        contactForm.reset();
+                        messageText = formOverlay.getAttribute('data-message-success');
+                        classList = ['form__overlay--success', 'show'];
+                    } else {
+                        messageText = formOverlay.getAttribute('data-message-error');
+                        classList = ['form__overlay--error', 'show'];
+                    }
+                    formOverlay.textContent = messageText;
+                    formOverlay.classList.add(...classList);
+                    setTimeout(() => {
+                        formOverlay.textContent = null;
+                        formOverlay.classList.remove(...classList);
+                    }, 3000);
+                    buttonSubmit.disabled = false;
+                })
+        });
+    }
+})();
