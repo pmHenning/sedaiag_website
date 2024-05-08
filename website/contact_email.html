@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta name='copyright' content='Copyright 2024. SedAI AG. All Rights Reserved.'>
+    <meta charset='UTF-8'>
+    <meta name='viewport'
+          content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0'>
+    <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Kontaktanfrage von der Website <a href='https://sedai.ag'>sedai.ag</a></h1>
+    <table style='border-collapse: collapse; border:1px solid #000; padding: 10px;'>
+        <tbody>
+            <tr>
+                <td style='font-weight: bold; text-align: right; padding: 5px; border:1px solid #000; white-space: nowrap;'>Name:</td>
+                <td style='padding: 5px; border:1px solid #000;'>{name}</td>
+            </tr>
+            <tr>
+                <td style='font-weight: bold; text-align: right; padding: 5px; border:1px solid #000; white-space: nowrap;'>E-Mail:</td>
+                <td style='padding: 5px; border:1px solid #000;'><a href='mailto:{email}'>{email}</a></td>
+            </tr>
+            <tr>
+                <td style='font-weight: bold; text-align: right; padding: 5px; border:1px solid #000; white-space: nowrap;'>Telefonnummer:</td>
+                <td style='padding: 5px; border:1px solid #000;'><a href='tel:{phone}'>{phone}</a></td>
+            </tr>
+            <tr>
+                <td style='font-weight: bold; text-align: right; padding: 5px; border:1px solid #000; white-space: nowrap;'>Hoehe des Anlagebetrages:</td>
+                <td style='padding: 5px; border:1px solid #000;'>{investment_amount}</td>
+            </tr>
+            <tr>
+                <td style='font-weight: bold; text-align: right; padding: 5px; border:1px solid #000; white-space: nowrap;'>Freitext:</td>
+                <td style='padding: 5px; border:1px solid #000;'>{message}</td>
+            </tr>
+            <tr>
+                <td style='font-weight: bold; text-align: right; padding: 5px; border:1px solid #000; white-space: nowrap;'>Datenschutz:</td>
+                <td style='padding: 5px; border:1px solid #000;'>{data_protection}</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

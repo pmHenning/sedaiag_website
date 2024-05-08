@@ -20,15 +20,14 @@
 (() => {
     const contactForm = document.querySelector('#contact-form');
     if(contactForm) {
-        const buttonSubmit = contactForm.querySelector('button[type=submit]');
         const formOverlay = contactForm.querySelector('.form__overlay');
+        const buttonSubmit = contactForm.querySelector('button[type=submit]');
         contactForm.addEventListener('submit', (event) => {
             event.preventDefault();
             buttonSubmit.disabled = true;
             const data = new FormData(event.target);
             const dataObject = Object.fromEntries(data.entries());
-            console.log(dataObject);
-            fetch('/contact', {
+            fetch('/contact.php', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -37,25 +36,46 @@
             })
                 .then(res => res.json())
                 .then(res => {
-                    let messageText;
-                    let classList = [];
                     if(res.status) {
+                        showContactFormSuccessMessage(formOverlay);
                         contactForm.reset();
-                        messageText = formOverlay.getAttribute('data-message-success');
-                        classList = ['form__overlay--success', 'show'];
                     } else {
-                        messageText = formOverlay.getAttribute('data-message-error');
-                        classList = ['form__overlay--error', 'show'];
+                        showContactFormErrorMessage(formOverlay);
                     }
-                    formOverlay.textContent = messageText;
-                    formOverlay.classList.add(...classList);
-                    setTimeout(() => {
-                        formOverlay.textContent = null;
-                        formOverlay.classList.remove(...classList);
-                    }, 3000);
+                    buttonSubmit.disabled = false;
+                })
+                .catch(err => {
+                    showContactFormErrorMessage(formOverlay);
                     buttonSubmit.disabled = false;
                 })
         });
+    }
+
+    function showContactFormErrorMessage(formOverlay) {
+        showContactFormMessage(
+            formOverlay,
+            formOverlay.getAttribute('data-message-error'),
+            ['form__overlay--error', 'show'],
+            3000
+        );
+    }
+
+    function showContactFormSuccessMessage(formOverlay) {
+        showContactFormMessage(
+            formOverlay,
+            formOverlay.getAttribute('data-message-success'),
+            ['form__overlay--success', 'show'],
+            3000
+        );
+    }
+
+    function showContactFormMessage(formOverlay, text, classList, duration) {
+        formOverlay.textContent = text;
+        formOverlay.classList.add(...classList);
+        setTimeout(() => {
+            formOverlay.textContent = null;
+            formOverlay.classList.remove(...classList);
+        }, duration);
     }
 })();
 
