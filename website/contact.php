@@ -28,7 +28,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         //Recipients
     $mail->setFrom($env['EMAIL_USERNAME'], 'SedaiAG Website');
-    $mail->addAddress('investorrealations@sedai.ag');     //Add a recipient
+    $mail->addAddress('investorrelations@sedai.ag');     //Add a recipient
 //    $mail->addAddress('ellen@example.com');               //Name is optional
 //    $mail->addReplyTo('info@example.com', 'Information');
     $mail->addCC('henning.kurella@sedai-now.com');
