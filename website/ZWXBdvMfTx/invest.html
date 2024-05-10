@@ -21,7 +21,7 @@
         </div>
         <div class="header__navi">
             <a href="/">Home</a>
-            <a href="mailto:info@sedai.ag">Invest Now</a>
+            <a href="javascript:void(0)" data-scrollTo="#section-contact">Invest Now</a>
         </div>
     </div>
 </header>
@@ -89,7 +89,7 @@
     <div class="wrapper">
         <h2 class="section-cta__headline section-cta__headline--narrow h1-text">Become a part of it and invest in the
             growth of <span class="color--blue">SedAI’s ESG software</span></h2>
-        <a class="section-cta__button" href="mailto:info@sedai.ag">Contact</a>
+        <a class="section-cta__button" href="javascript:void(0)" data-scrollTo="#section-contact">Contact</a>
     </div>
 </section>
 
@@ -260,7 +260,7 @@
     <div class='wrapper'>
         <div class="section-cta__headline"><h2 class="h2-text">Want to join the next digital event?</h2></div>
         <div class="section-cta__text text-standard">Sign up now!</div>
-        <a class="section-cta__button" href="mailto:info@sedai.ag">Contact</a>
+        <a class="section-cta__button" href="javascript:void(0)" data-scrollTo="#section-contact">Contact</a>
     </div>
 </section>
 
@@ -281,7 +281,7 @@
     <div class="wrapper">
         <h2 class="h2-text section-cta__headline">Convinced?</h2>
         <p class="section-cta__text text-standard">Great! Contact us for investment opportunities!</p>
-        <a class="section-cta__button" href="mailto:info@sedai.ag">Contact</a>
+        <a class="section-cta__button" href="javascript:void(0)" data-scrollTo="#section-contact">Contact</a>
     </div>
 </section>
 
@@ -294,7 +294,7 @@
     <ul class='section-faq__list'>
         <li class='section-faq__item'>
             <div class='section-faq__item-question'>How can I participate?</div>
-            <div class='section-faq__item-answer text-standard'>Contact us at <a href="mailto:info@sedai.ag">info@sedai.ag</a>.
+            <div class='section-faq__item-answer text-standard'>Contact us at <a href="javascript:void(0)" data-scrollTo="#section-contact">info@sedai.ag</a>.
                 To subscribe, you only need a copy of your ID and a touchscreen (for digital signature) or alternatively
                 return a countersigned subscription form as a PDF file. All documents available in the digital
                 subscription process should be downloaded and carefully reviewed, including the securities prospectus,
@@ -367,6 +367,61 @@
     </ul>
 </section>
 
+<section class="section-contact" id='section-contact'>
+    <div class="wrapper">
+        <div class='section-contact__headline'>
+            <h2 class="h2-text">Are we spectators or architects of change?</h2>
+            <p class="text-standard">We will contact you using the contact details you provide.</p>
+        </div>
+        <form class='section-contact__form' id='contact-form'>
+            <div class='form__row'>
+                <label class='form__group'>
+                    <span class='form__label'>Surname</span>
+                    <input type='text' name='surname' class='form__input' required maxlength='100' />
+                </label>
+                <label class='form__group'>
+                    <span class='form__label'>Name</span>
+                    <input type='text' name='name' class='form__input' required maxlength='100' />
+                </label>
+            </div>
+            <div class='form__row'>
+                <label class='form__group'>
+                    <span class='form__label'>Email</span>
+                    <input type='email' name='email' class='form__input' required />
+                </label>
+            </div>
+            <div class='form__row'>
+                <label class='form__group'>
+                    <span class='form__label'>Phone number (Optional)</span>
+                    <input type='tel' name='phone' class='form__input' />
+                </label>
+                <label class='form__group'>
+                    <span class='form__label'>Amount of the investment (Optional)</span>
+                    <input type='number' name='investment_amount' class='form__input' />
+                </label>
+            </div>
+            <div class='form__row'>
+                <label class='form__group'>
+                    <span class='form__label'>Message (Optional)</span>
+                    <textarea name='message' class='form__input' rows='3'></textarea>
+                </label>
+            </div>
+            <div class='form__row'>
+                <label class='form__group form__group--checkbox'>
+                    <input type='checkbox' name='data_protection' class='form__input' />
+                    <span class='form__label'>Data protection</span>
+                </label>
+            </div>
+            <div class='form-row form-row--buttons'>
+                <button type='submit' class='form__button form__button--submit'>Contacts us</button>
+            </div>
+            <div class='form__overlay'
+                 data-message-success='Contact form was sent!'
+                 data-message-error='Something went wrong!'
+            ></div>
+        </form>
+    </div>
+</section>
 
 <footer>
     <div class="wrapper footer__wrapper">

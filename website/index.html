@@ -20,7 +20,7 @@
         </div>
         <div class="header__navi">
             <a class="header--active" href="/">Home</a>
-            <a href="mailto:info@sedai.ag">Invest Now</a>
+            <a href="javascript:void(0)" data-scrollTo="#section-contact">Invest Now</a>
         </div>
     </div>
 </header>
@@ -128,12 +128,59 @@
     </div>
 </section>
 
-
-<section class="section-cta section-cta--black">
+<section class="section-contact" id='section-contact'>
     <div class="wrapper">
-        <h2 class="section-cta__headline h2-text">Are we spectators or architects of change?</h2>
-        <p class="section-cta__text text-standard">Become part of the movement!</p>
-        <a class="section-cta__button" href="mailto:info@sedai.ag">Contact</a>
+        <div class='section-contact__headline'>
+            <h2 class="h2-text">Are we spectators or architects of change?</h2>
+            <p class="text-standard">We will contact you using the contact details you provide.</p>
+        </div>
+        <form class='section-contact__form' id='contact-form'>
+            <div class='form__row'>
+                <label class='form__group'>
+                    <span class='form__label'>Surname</span>
+                    <input type='text' name='surname' class='form__input' required maxlength='100' />
+                </label>
+                <label class='form__group'>
+                    <span class='form__label'>Name</span>
+                    <input type='text' name='name' class='form__input' required maxlength='100' />
+                </label>
+            </div>
+            <div class='form__row'>
+                <label class='form__group'>
+                    <span class='form__label'>Email</span>
+                    <input type='email' name='email' class='form__input' required />
+                </label>
+            </div>
+            <div class='form__row'>
+                <label class='form__group'>
+                    <span class='form__label'>Phone number (Optional)</span>
+                    <input type='tel' name='phone' class='form__input' />
+                </label>
+                <label class='form__group'>
+                    <span class='form__label'>Amount of the investment (Optional)</span>
+                    <input type='number' name='investment_amount' class='form__input' />
+                </label>
+            </div>
+            <div class='form__row'>
+                <label class='form__group'>
+                    <span class='form__label'>Message (Optional)</span>
+                    <textarea name='message' class='form__input' rows='3'></textarea>
+                </label>
+            </div>
+            <div class='form__row'>
+                <label class='form__group form__group--checkbox'>
+                    <input type='checkbox' name='data_protection' class='form__input' />
+                    <span class='form__label'>Data protection</span>
+                </label>
+            </div>
+            <div class='form-row form-row--buttons'>
+                <button type='submit' class='form__button form__button--submit'>Contacts us</button>
+            </div>
+            <div class='form__overlay'
+                data-message-success='Contact form was sent!'
+                data-message-error='Something went wrong!'
+            ></div>
+        </form>
     </div>
 </section>
 
@@ -148,4 +195,5 @@
 </footer>
 
 </body>
+<script src='./js/main.js'></script>
 </html>
