@@ -30,6 +30,11 @@
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
       gap: $min;
+
+      &_column {
+        display: flex;
+        flex-direction: column;
+      }
     }
 
     &__group {
@@ -172,11 +177,17 @@
         text-shadow: 1px 1px rgba(250,250,250,.3);
       }
     }
+    
+    &__error {
+      color: #cc0033;
+    }
   }
 
   textarea.form__input {
     height: auto;
     max-height: $huge;
+    min-height: 2rem;
+    resize: vertical;
   }
 }
 

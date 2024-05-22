@@ -426,11 +426,12 @@
                     <textarea name='message' class='form__input' rows='3'></textarea>
                 </label>
             </div>
-            <div class='form__row'>
+            <div class='form__row form__row_column'>
                 <label class='form__group form__group--checkbox'>
-                    <input type='checkbox' name='data_protection' class='form__input' />
+                    <input type='checkbox' name='data_protection' class='form__input' id='input-data-protection' />
                     <span class='form__label'>Ich bin damit einverstanden, dass meine hier angegebenen Daten an die SedAI AG übermittelt und dort zum Zweck der Kontaktierung verwendet werden.</span>
                 </label>
+                <div class='form__error hide' id='data-protection-required'>Bitte aktivieren Sie das Kontrollkästchen für den Datenschutz</div>
             </div>
             <div class='form-row form-row--buttons'>
                 <button type='submit' class='form__button form__button--submit'>Kontaktdaten senden</button>

@@ -406,11 +406,12 @@
                     <textarea name='message' class='form__input' rows='3'></textarea>
                 </label>
             </div>
-            <div class='form__row'>
+            <div class='form__row form__row_column'>
                 <label class='form__group form__group--checkbox'>
-                    <input type='checkbox' name='data_protection' class='form__input' />
+                    <input type='checkbox' name='data_protection' class='form__input' id='input-data-protection' />
                     <span class='form__label'>I agree that my data provided here may be transmitted to SedAI AG and used there for the purpose of contacting me.</span>
                 </label>
+                <div class='form__error hide' id='data-protection-required'>Please opt-in data protection checkbox</div>
             </div>
             <div class='form-row form-row--buttons'>
                 <button type='submit' class='form__button form__button--submit'>Send contact data</button>
