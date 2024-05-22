@@ -27,28 +27,45 @@
             buttonSubmit.disabled = true;
             const data = new FormData(event.target);
             const dataObject = Object.fromEntries(data.entries());
-            fetch('/contact.php', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(dataObject)
-            })
-                .then(res => res.json())
-                .then(res => {
-                    if(res.status) {
-                        showContactFormSuccessMessage(formOverlay);
-                        contactForm.reset();
-                    } else {
+            if(validateForm(dataObject)) {
+                fetch('/contact.php', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(dataObject)
+                })
+                    .then(res => res.json())
+                    .then(res => {
+                        if(res.status) {
+                            showContactFormSuccessMessage(formOverlay);
+                            contactForm.reset();
+                        } else {
+                            showContactFormErrorMessage(formOverlay);
+                        }
+                        buttonSubmit.disabled = false;
+                    })
+                    .catch(err => {
                         showContactFormErrorMessage(formOverlay);
-                    }
-                    buttonSubmit.disabled = false;
-                })
-                .catch(err => {
-                    showContactFormErrorMessage(formOverlay);
-                    buttonSubmit.disabled = false;
-                })
+                        buttonSubmit.disabled = false;
+                    })
+            }
         });
+
+        document.querySelector('#input-data-protection').addEventListener('change', (event) => {
+            if(event.target.checked) {
+                contactForm.querySelector('#data-protection-required').classList.add('hide');
+                buttonSubmit.disabled = false;
+            }
+        })
+    }
+
+    function validateForm(dataObject) {
+        if(dataObject.data_protection !== 'on') {
+            contactForm.querySelector('#data-protection-required').classList.remove('hide');
+            return false;
+        }
+        return true;
     }
 
     function showContactFormErrorMessage(formOverlay) {
